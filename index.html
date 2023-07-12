@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Lista de Compras</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo_header">Lista de Compras</h1>
+    </header>
+
+    <main>
+        <section class="crud-listas">
+
+            <h2>Selecione apenas uma opção:</h2>
+
+            <form class="form-crud-produto">
+                <div class="forms">
+                    <input type="checkbox" id="adicionar-produto" placeholder="adicionar-produto" />
+                    <label for="adicionar-produto">Adicionar Produto</label>
+                </div>
+                <div class="forms">
+                    <input type="checkbox" id="excluir-produto" placeholder="excluir-produto" />
+                    <label for="excluir-produto">Excluir Produto</label>
+                </div>
+                <div class="forms">
+                    <input type="text" id="txtNome" placeholder="Nome do Produto" />
+                </div>
+                <div class="forms">
+                    <select name="seleciona-categoria" id="selectCategoria" title="selecione a categoria">
+                        <option selected value="#">-- Escolha a Categoria --</option>
+                        <option value="Alimentação" data-value="valor-oculto-Alimentação">Alimentação</option>
+                        <option value="Frutas e Legumes" data-value="valor-oculto-Frutas e Legumes">Frutas e Legumes
+                        </option>
+                        <option value="Higiene" data-value="valor-oculto-Higiene">Higiene</option>
+                        <option value="Limpeza" data-value="valor-oculto-Limpeza">Limpeza</option>
+                        <option value="Utilidades" data-value="valor-oculto-Utilidades">Utilidades</option>
+                    </select>
+                </div>
+                <div class="forms">
+                    <input type="button" id="bt" value="Salvar" />
+                </div>
+            </form>
+
+        </section>
+
+
+        <section class="listas">
+            <div class="separar-listas">
+
+
+                <h3 class="titulo-listas"><img src="img/alimentação.png" alt="icone-alimentacao"
+                        class="icones-listas">Alimentação</h3>
+
+                <ul id="lista-alimentacao">
+                    <li>Bolacha</li>
+                    <li>Carne</li>
+                    <li>Miojo</li>
+                    <li>Suco</li>
+                </ul>
+
+            </div>
+
+            <div class="separar-listas">
+
+
+                <h3 class="titulo-listas"><img src="img/frutaselegumes.png" alt="icone-frutas&legumes"
+                        class="icones-listas">Frutas e Legumes</h3>
+
+
+                <ul id="lista-frutas">
+                    <li>Maça</li>
+                    <li>Alface</li>
+                </ul>
+            </div>
+
+            <div class="separar-listas">
+
+
+                <h3 class="titulo-listas"><img src="img/higiene.png" alt="icone-higiene" class="icones-listas">Higiene
+                </h3>
+
+
+                <ul id="lista-higiene">
+                    <li>Papel Higiênico</li>
+                    <li>Pasta de Dente</li>
+                </ul>
+            </div>
+
+            <div class="separar-listas">
+
+
+
+                <h3 class="titulo-listas"><img src="img/limpeza.png" alt="icone-limpeza" class="icones-listas">Limpeza
+                </h3>
+
+
+                <ul id="lista-limpeza">
+                    <li>Água Sanitária</li>
+                    <li>Desinfetante</li>
+                </ul>
+            </div>
+
+            <div class="separar-listas">
+
+
+                <h3 class="titulo-listas"><img src="img/utilidades.png" alt="icone-utilidades"
+                        class="icones-listas">Utilidades</h3>
+
+
+                <ul id="lista-utilidades">
+                    <li>Fósforo</li>
+                    <li>Talheres</li>
+                </ul>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/add.js"></script>
+    <script src="./js/delete.js"></script>
+    <script src="./js/valida.js"></script>
+</body>
+
+</html>
