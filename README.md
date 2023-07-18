@@ -33,6 +33,8 @@ A partir dai, por conta de alguns cursos estudados, decidi criar meu próprio si
 - Eventos (JS)
 - Formulário (JS)
 
+![imagem_2023-07-18_194904666](https://github.com/VinicMello/lista-de-compras/assets/107872161/09cd56af-0c05-41e8-a6b9-301e630c8e15)
+
 <h2> Autor </h2>
 Vinicius de Mello
 
